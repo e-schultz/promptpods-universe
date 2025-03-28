@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useFloat } from '@/context/FloatContext';
-import { ArrowLeft, Settings, Cube, X } from 'lucide-react';
+import { ArrowLeft, Settings, Package, X } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -35,7 +35,7 @@ const FloatHeader: React.FC<FloatHeaderProps> = ({ setCurrentView, currentView }
             </Button>
           ) : (
             <div className="flex items-center">
-              <Cube className="h-6 w-6 text-float-accent mr-2 animate-float" />
+              <Package className="h-6 w-6 text-float-accent mr-2 animate-float" />
             </div>
           )}
           
@@ -45,7 +45,7 @@ const FloatHeader: React.FC<FloatHeaderProps> = ({ setCurrentView, currentView }
           
           {activePod && (
             <div className="ml-4 px-3 py-1 bg-float-navy/30 rounded-full flex items-center">
-              <Cube className="h-4 w-4 text-float-accent mr-2" />
+              <Package className="h-4 w-4 text-float-accent mr-2" />
               <span className="text-gray-200 font-medium">{activePod.name}</span>
               <Button 
                 variant="ghost" 

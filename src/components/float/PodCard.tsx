@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { useFloat } from '@/context/FloatContext';
-import { Cube, Users, FileText, Sparkles, Calendar, MoreVertical } from 'lucide-react';
+import { Package, Users, FileText, Sparkles, Calendar, MoreVertical } from 'lucide-react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 
 interface PodCardProps {
@@ -43,7 +43,7 @@ const PodCard: React.FC<PodCardProps> = ({ pod }) => {
       <CardHeader className="pb-2">
         <div className="flex justify-between items-start">
           <CardTitle className="text-white font-semibold flex items-center gap-2">
-            <Cube className="h-5 w-5 text-float-accent" />
+            <Package className="h-5 w-5 text-float-accent" />
             {pod.name}
           </CardTitle>
           <DropdownMenu>

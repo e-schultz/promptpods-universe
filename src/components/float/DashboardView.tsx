@@ -5,7 +5,7 @@ import PodCard from './PodCard';
 import CreatePodModal from './CreatePodModal';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import { Plus, LayoutGrid, LayoutList, Search } from 'lucide-react';
+import { Plus, LayoutGrid, LayoutList, Search, Package } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { ScrollArea } from '@/components/ui/scroll-area';
 
@@ -81,7 +81,7 @@ const DashboardView: React.FC = () => {
       {pods.length === 0 ? (
         <div className="rounded-lg border border-float-purple/20 bg-float-navy/20 p-12 text-center">
           <div className="inline-flex justify-center items-center w-16 h-16 rounded-full bg-float-purple/10 mb-4">
-            <Cube className="h-8 w-8 text-float-accent animate-pulse-slow" />
+            <Package className="h-8 w-8 text-float-accent animate-pulse-slow" />
           </div>
           <h3 className="text-xl font-medium text-white mb-2">No PromptPods Yet</h3>
           <p className="text-gray-400 mb-6 max-w-md mx-auto">Create your first PromptPod to start organizing your thoughts, prompts, and contexts in isolated containers.</p>
