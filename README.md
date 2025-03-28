@@ -1,69 +1,63 @@
-# Welcome to your Lovable project
 
-## Project info
+# FLOAT.K8s: Prompt Management System
 
-**URL**: https://lovable.dev/projects/3ab57e59-6c7d-497a-a998-2e49e4cd485c
+## Overview
 
-## How can I edit this code?
+FLOAT.K8s is an innovative Prompt Management System inspired by Kubernetes, designed to help users organize, manage, and explore complex thought processes through modular, isolated containers called PromptPods.
 
-There are several ways of editing your application.
+## Key Features
 
-**Use Lovable**
+### PromptPods
+- Self-contained thought containers
+- Isolate and organize different contexts and perspectives
+- Mitigate cognitive overload and AI bias
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3ab57e59-6c7d-497a-a998-2e49e4cd485c) and start prompting.
+### Identity Management
+- Create and manage multiple AI identities
+- Context-switching capabilities
+- Personalized prompt handling
 
-Changes made via Lovable will be committed automatically to this repo.
+### File Storage
+- Secure storage for prompts, resources, and context
+- Easy retrieval and organization
+- Support for various file types
 
-**Use your preferred IDE**
+### Ritual Layer
+- Facilitate creative exploration
+- Track and guide thought processes
+- Optional creative enhancement mechanism
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Technical Architecture
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Built with React, Vite, and TypeScript
+- Responsive and modern UI design
+- Modular component-based structure
+- Tailwind CSS for styling
+- Shadcn UI for pre-built components
 
-Follow these steps:
+## Project Goals
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Reduce cognitive complexity in AI interactions
+- Provide structured approach to prompt engineering
+- Enable scalable and organized thought management
+- Support diverse perspectives and creative exploration
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Future Roadmap
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Enhanced AI model integration
+- Advanced ritual tracking
+- Improved identity management
+- Comprehensive prompt templating
+- Backend persistence with Supabase
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Getting Started
 
-**Edit a file directly in GitHub**
+Refer to the project documentation for installation and usage instructions.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Contributing
 
-**Use GitHub Codespaces**
+We welcome contributions! Please read our contribution guidelines for more information.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## License
 
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/3ab57e59-6c7d-497a-a998-2e49e4cd485c) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+[Specify your license here]
