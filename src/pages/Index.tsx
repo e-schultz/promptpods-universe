@@ -1,13 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useState } from 'react';
+import { FloatProvider } from '@/context/FloatContext';
+import FloatHeader from '@/components/float/FloatHeader';
+import DashboardView from '@/components/float/DashboardView';
+import IdentityManager from '@/components/float/IdentityManager';
+import FileStorage from '@/components/float/FileStorage';
+import RitualManager from '@/components/float/RitualManager';
 
 const Index = () => {
+  const [currentView, setCurrentView] = useState<'dashboard' | 'identity' | 'files' | 'rituals'>('dashboard');
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <FloatProvider>
+      <div className="min-h-screen bg-float-background text-white flex flex-col">
+        <FloatHeader setCurrentView={setCurrentView} currentView={currentView} />
+        
+        <main className="flex-1">
+          {currentView === 'dashboard' && <DashboardView />}
+          {currentView === 'identity' && <div className="p-6"><IdentityManager /></div>}
+          {currentView === 'files' && <div className="p-6"><FileStorage /></div>}
+          {currentView === 'rituals' && <div className="p-6"><RitualManager /></div>}
+        </main>
       </div>
-    </div>
+    </FloatProvider>
   );
 };
 
